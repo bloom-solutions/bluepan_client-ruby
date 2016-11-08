@@ -10,7 +10,7 @@ module BluepanClient
           with_default(described_class::HOSTS[:staging])
       end
       it { is_expected.to have_attribute(:api_token, String) }
-      it { is_expected.to have_attribute(:api_secret_key, String) }
+      it { is_expected.to have_attribute(:api_secret, String) }
     end
 
   end

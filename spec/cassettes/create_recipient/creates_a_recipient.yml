@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bluepan.net/v1/<api_token>/recipients
+    body:
+      encoding: UTF-8
+      string: api_secret=<api_secret>&recipient_firstname=Testy&recipient_lastname=McTestface&recipient_mobile=%2B639178908908&recipient_email=testy%40mctest.face
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private,no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '195'
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Expires:
+      - Tue, 08 Nov 2016 02:16:28 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      Set-Cookie:
+      - 5cd9bc3f10c9051b7eb9d43222241f5d=JUMyJUFDJUMyJUExJUMzJUI3JUMzJTkwJUMyJUEyJUMyJUIzJUMzJTgyJUMyJUEyJUMyJUE0JUMzJUFBJUMyJUExJUMzJTkxJUMyJUJDJUMyJUExJUMzJTk4JUMzJUFFJUMyJUExJUMzJUI0JUMzJUI4JUMyJUEyJUMyJUI0JUMyJUJDJUMyJUEyJUMyJUIxJUMyJUJEJUMyJUEyJUMyJUI5JUMzJUI3JUMyJUExJUMzJUE4JUMyJUI3JUMyJUExJUMzJTkzJUMyJUFGJUMyJUExJUMzJTkwJUMyJUIxJUMyJUExJUMzJTk5JUMzJTk3JUMyJUExJUMzJTkxJUMzJUFEJUMyJUExJUMzJUIwJUMzJTk0JUMyJUExJUMzJTkwJUMzJThBJUMyJUExJUMzJTkxJUMyJUIxJUMyJUExJUMzJTkxJUMzJUFBJUMyJUExJUMzJTkxJUMzJTlFJUMyJUExJUMzJTkzJUMzJUEyJUMyJUExJUMzJUI1JUM0JTgyJUMyJUExJUM0JTgxJUMzJTg2JUMyJUExJUMzJUEyJUMzJUJBJUMyJUExJUMzJUJEJUMzJThDJUMyJUExJUMzJTk5JUMzJUJGJUMyJUExJUMzJUI5JUMzJTg5JUMyJUExJUMzJThGJUMyJUFDJUMyJUExJUMzJTk4JUMzJTkxJUMyJUExJUMzJTlBJUMyJUE4JUMyJUExJUMzJThDJUMyJUFFJUMyJUExJUMzJTkwJUMzJUE1JUMyJUEyJUMyJUI0JUMzJUFEJUMyJUEyJUMyJUFFJUMzJTlBJUMyJUExJUMzJUJCJUMzJUJFJUMyJUExJUMzJTk1JUMzJUFDJUMyJUExJUMzJUFBJUMyJUI3JUMyJUExJUMzJUEzJUMzJUI4JUMyJUExJUMzJUJBJUMzJUI4JUMyJUExJUM0JTgzJUMzJUFCJUMyJUExJUMzJUEyJUMzJTgxJUMyJUExJUMzJTkyJUMyJUIwJUMyJUExJUMzJTg1JUMyJUJGJUMyJUExJUMzJTkwJUMzJUFEJUMyJUExJUMzJUFFJUMyJUFFJUMyJUExJUMzJTkyJUMyJUE2JUMyJUExJUMzJThDJUMzJUI3JUMyJUExJUMzJUI0JUMyJUJBJUMyJUExJUMzJTlB;
+        domain=api.bluepan.net; path=/
+      - ASPSESSIONIDCWCTRRTQ=IDFLPCEBMFEMEBAIOIJFCMCG; secure; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 09 Nov 2016 02:16:28 GMT
+    body:
+      encoding: UTF-8
+      string: "{\r\n\"recipientseq\": \"33018\",\r\n\"firstname\": \"Testy\",\r\n\"lastname\":
+        \"McTestface\",\r\n\"mobile\": \"+639178908908\",\r\n\"email\": \"testy@mctest.face\",\r\n\"created_at\":
+        \"2016-11-09 11:16:28\",\r\n\"updated_at\": \"\"\r\n}"
+    http_version: 
+  recorded_at: Wed, 09 Nov 2016 02:16:26 GMT
+recorded_with: VCR 3.0.3

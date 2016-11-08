@@ -8,10 +8,10 @@ describe BluepanClient do
   describe ".new" do
     describe "valid client" do
       it "creates a new BluepanClient::Client" do
-        client = described_class.new(api_token: "abc", api_secret_key: "xyz")
+        client = described_class.new(api_token: "abc", api_secret: "xyz")
         expect(client).to be_a BluepanClient::Client
         expect(client.api_token).to eq "abc"
-        expect(client.api_secret_key).to eq "xyz"
+        expect(client.api_secret).to eq "xyz"
       end
     end
 

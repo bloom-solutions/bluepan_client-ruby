@@ -7,7 +7,7 @@ module BluepanClient
       subject { described_class }
       it { is_expected.to have_attribute(:host, String) }
       it { is_expected.to have_attribute(:api_token, String) }
-      it { is_expected.to have_attribute(:api_secret_key, String) }
+      it { is_expected.to have_attribute(:api_secret, String) }
       it { is_expected.to have_attribute(:path, String) }
       it { is_expected.to have_attribute(:uri, String) }
     end

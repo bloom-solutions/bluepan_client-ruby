@@ -4,7 +4,7 @@ module BluepanClient
     include Virtus.model
     attribute :host, String
     attribute :api_token, String
-    attribute :api_secret_key, String
+    attribute :api_secret, String
     attribute :path, String, lazy: true, default: :default_path
     attribute :uri, String, lazy: true, default: :default_uri
 

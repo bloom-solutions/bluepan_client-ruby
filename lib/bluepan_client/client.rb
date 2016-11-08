@@ -9,12 +9,18 @@ module BluepanClient
     include Virtus.model
     attribute :host, String, default: HOSTS.fetch(:staging)
     attribute :api_token, String
-    attribute :api_secret_key, String
+    attribute :api_secret, String
 
     def get_strategies
       request = GetStrategiesRequest.new(attributes)
       raw_response = request.()
       GetStrategiesResponse.new(raw_response: raw_response)
+    end
+
+    def create_recipient(args)
+      request = CreateRecipientRequest.new(attributes.merge(args))
+      raw_response = request.()
+      CreateRecipientResponse.new(raw_response: raw_response)
     end
 
   end

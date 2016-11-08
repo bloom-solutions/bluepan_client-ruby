@@ -10,8 +10,8 @@ module BluepanClient
       expect(message).to include("must be filled")
     end
 
-    it "requires api_secret_key" do
-      message = schema.(api_secret_key: "").messages[:api_secret_key]
+    it "requires api_secret" do
+      message = schema.(api_secret: "").messages[:api_secret]
       expect(message).to include("must be filled")
     end
 
