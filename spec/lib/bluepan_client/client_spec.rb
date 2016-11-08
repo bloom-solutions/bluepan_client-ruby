@@ -5,6 +5,10 @@ module BluepanClient
 
     describe "attributes" do
       subject { described_class }
+      it do
+        is_expected.to have_attribute(:host, String).
+          with_default(described_class::HOSTS[:staging])
+      end
       it { is_expected.to have_attribute(:api_token, String) }
       it { is_expected.to have_attribute(:api_secret_key, String) }
     end
