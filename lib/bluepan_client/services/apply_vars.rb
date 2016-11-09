@@ -14,7 +14,7 @@ module BluepanClient
       matches.reduce(string) do |str, var|
         method_name = var.gsub(":", "")
         value = object.send(method_name)
-        str.gsub(var, value)
+        str.gsub(var, value.to_s)
       end
     end
 
