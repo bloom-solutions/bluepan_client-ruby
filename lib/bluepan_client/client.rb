@@ -3,7 +3,7 @@ module BluepanClient
 
     HOSTS = {
       production: "https://api.bluepan.net",
-      staging: "https://api.bluepan.net",
+      staging: "https://api.bluepan.net", # There is no staging server, yet
     }
 
     include Virtus.model
