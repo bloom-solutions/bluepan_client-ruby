@@ -26,7 +26,7 @@ See `spec/acceptance` for examples.
 
 ## Development
 
-- Copy `spec/config.yml.sample` to `spec/config.yml` and fill in with your test credentials. NOTE: there is no staging server, so the gem connects to the production server. Tests will write into your production data. We have taken and taking steps to write things that are inconsequential (i.e. do not use up your credit).
+- Copy `spec/config.yml.sample` to `spec/config.yml` and fill in with your test credentials. **NOTE**: there is no staging server, so the gem connects to the production server. Tests will write into your production data. We have taken and taking steps to write things that are inconsequential (i.e. do not use up your credit).
 
 ## Contributing
 
