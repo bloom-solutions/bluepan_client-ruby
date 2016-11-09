@@ -11,7 +11,7 @@ module BluepanClient
     private
 
     def default_path
-      ApplyVars.(self.class::PATH, api_token: api_token)
+      ApplyVars.(self.class::PATH, self)
     end
 
     def default_uri

@@ -3,14 +3,19 @@ module BluepanClient
 
     include Virtus.model
     attribute :string, String
-    attribute :params, IndifferentHash
+    attribute :object, Object
 
-    def self.call(string, params)
-      self.new(string: string, params: params).()
+    def self.call(string, object)
+      self.new(string: string, object: object).()
     end
 
     def call
-      params.reduce(string) { |str, (key, value)| str.gsub(":#{key}", value) }
+      matches = string.scan(/:\w+/)
+      matches.reduce(string) do |str, var|
+        method_name = var.gsub(":", "")
+        value = object.send(method_name)
+        str.gsub(var, value)
+      end
     end
 
   end
