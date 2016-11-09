@@ -23,5 +23,11 @@ module BluepanClient
       CreateRecipientResponse.new(raw_response: raw_response)
     end
 
+    def get_recipient(id)
+      request = GetRecipientRequest.new(attributes.merge(recipientseq: id))
+      raw_response = request.()
+      GetRecipientResponse.new(raw_response: raw_response)
+    end
+
   end
 end
