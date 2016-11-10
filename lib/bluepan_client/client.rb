@@ -11,6 +11,12 @@ module BluepanClient
     attribute :api_token, String
     attribute :api_secret, String
 
+    def get_provinces
+      request = GetProvincesRequest.new(attributes)
+      raw_response = request.()
+      GetProvincesResponse.new(raw_response: raw_response)
+    end
+
     def get_strategies
       request = GetStrategiesRequest.new(attributes)
       raw_response = request.()
