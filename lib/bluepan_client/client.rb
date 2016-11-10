@@ -11,6 +11,12 @@ module BluepanClient
     attribute :api_token, String
     attribute :api_secret, String
 
+    def get_cities(provinceseq)
+      request = GetCitiesRequest.new(attributes.merge(provinceseq: provinceseq))
+      raw_response = request.()
+      GetCitiesResponse.new(raw_response: raw_response)
+    end
+
     def get_provinces
       request = GetProvincesRequest.new(attributes)
       raw_response = request.()
