@@ -2,7 +2,7 @@ module BluepanClient
   class Strategy
 
     include Virtus.model
-    attribute :strategyseq, String
+    attribute :strategyseq, Integer
     attribute :currency, String
     attribute :name_en, String
     attribute :name, String

@@ -29,5 +29,11 @@ module BluepanClient
       GetRecipientResponse.new(raw_response: raw_response)
     end
 
+    def create_remittance(args)
+      request = CreateRemittanceRequest.new(attributes.merge(args))
+      raw_response = request.()
+      CreateRemittanceResponse.new(raw_response: raw_response)
+    end
+
   end
 end

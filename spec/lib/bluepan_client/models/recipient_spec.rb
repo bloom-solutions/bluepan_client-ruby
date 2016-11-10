@@ -14,5 +14,11 @@ module BluepanClient
       it { is_expected.to have_attribute(:updated_at, DateTime) }
     end
 
+    describe "#updated_at" do
+      it_behaves_like("a null guard", :updated_at, {
+        valid_value: "2016-11-10 14:00:02".to_datetime,
+      })
+    end
+
   end
 end

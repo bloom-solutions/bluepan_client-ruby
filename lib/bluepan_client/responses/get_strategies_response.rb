@@ -6,7 +6,7 @@ module BluepanClient
     private
 
     def default_strategies
-      JSON.parse(body).map { |strategy_hash| Strategy.new(strategy_hash) }
+      parsed_body.map { |strategy_hash| Strategy.new(strategy_hash) }
     end
 
   end

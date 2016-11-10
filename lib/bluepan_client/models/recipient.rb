@@ -10,5 +10,9 @@ module BluepanClient
     attribute :created_at, DateTime
     attribute :updated_at, DateTime
 
+    def updated_at=(v)
+      super GuardNull.(v)
+    end
+
   end
 end

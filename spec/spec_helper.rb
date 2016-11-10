@@ -6,6 +6,8 @@ require "bluepan_client"
 require "pathname"
 require "yaml"
 require "active_support/core_ext/object/blank"
+require "active_support/core_ext/enumerable"
+require "active_support/json"
 require "dry-validation-matchers"
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))

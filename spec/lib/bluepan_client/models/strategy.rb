@@ -5,7 +5,7 @@ module BluepanClient
 
     describe "attributes" do
       subject { described_class }
-      it { is_expected.to have_attribute(:strategyseq, String) }
+      it { is_expected.to have_attribute(:strategyseq, Integer) }
       it { is_expected.to have_attribute(:currency, String) }
       it { is_expected.to have_attribute(:name_en, String) }
       it { is_expected.to have_attribute(:name, String) }

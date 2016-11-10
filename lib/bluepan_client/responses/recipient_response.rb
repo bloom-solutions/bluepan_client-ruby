@@ -6,7 +6,7 @@ module BluepanClient
     private
 
     def default_recipient
-      Recipient.new(JSON.parse(body))
+      Recipient.new(parsed_body)
     end
 
   end
