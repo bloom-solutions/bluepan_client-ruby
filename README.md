@@ -28,6 +28,10 @@ See `spec/acceptance` for examples.
 
 - Copy `spec/config.yml.sample` to `spec/config.yml` and fill in with your test credentials. **NOTE**: there is no staging server, so the gem connects to the production server. Tests will write into your production data. We have taken and taking steps to write things that are inconsequential (i.e. do not use up your credit).
 
+### On Your App
+
+You may use FactoryGirl factories that were added for your convenience by calling `require "bluepan_client/factories"`
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/imacchiato/bluepan_client-ruby. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
