@@ -8,6 +8,7 @@ module BluepanClient
       it { is_expected.to have_attribute(:raw_response) }
       it { is_expected.to have_attribute(:body) }
       it { is_expected.to have_attribute(:parsed_body) }
+      it { is_expected.to have_attribute(:error_message, String) }
     end
 
     describe "#body" do
@@ -21,10 +22,18 @@ module BluepanClient
     end
 
     describe "#parsed_body" do
-      let(:response) { described_class.new(body: {"hi" => "there"}.to_json) }
+      context "body is parseable" do
+        let(:response) { described_class.new(body: {"hi" => "there"}.to_json) }
 
-      it "defaults to the JSON-parsed body" do
-        expect(response.parsed_body[:hi]).to eq("there")
+        it "defaults to the JSON-parsed body" do
+          expect(response.parsed_body[:hi]).to eq("there")
+        end
+      end
+
+      context "body is not parseable" do
+        let(:response) { described_class.new(body: "Some string") }
+        subject { response.parsed_body }
+        it { is_expected.to be_nil }
       end
     end
 
@@ -68,6 +77,37 @@ module BluepanClient
         let(:success) { true }
         let(:parsed_body) { [{}] }
         it { is_expected.to be true }
+      end
+    end
+
+    describe "#error_message" do
+      subject { response.error_message }
+
+      context "success is true" do
+        let(:response) { described_class.new(success: true) }
+        it { is_expected.to be_nil }
+      end
+
+      context "success is false" do
+        context "there is an error in the body" do
+          let(:response) do
+            described_class.new(success: false, parsed_body: parsed_body)
+          end
+
+          let(:parsed_body) { {error: "error message" } }
+          it { is_expected.to eq "error message" }
+        end
+
+        context "there is no error in the body" do
+          let(:raw_response) do
+            instance_double(HTTParty::Response, code: 500, body: "Body")
+          end
+          let(:response) do
+            described_class.new(success: false, raw_response: raw_response)
+          end
+
+          it { is_expected.to eq "Status: 500; Error message not found in `Body`"}
+        end
       end
     end
 
