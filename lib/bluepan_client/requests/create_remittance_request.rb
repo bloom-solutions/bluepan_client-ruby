@@ -3,22 +3,22 @@ module BluepanClient
 
     PATH = "/v1/:api_token/remittances"
 
-      attribute :paymethod, String
-      attribute :dest_currency, String
-      attribute :amount, Float
-      attribute :recipientseq, Integer
-      attribute :strategyseq, Integer
-      attribute :provinceseq, Integer
-      attribute :cityseq, Integer
-      attribute :accountname, String
-      attribute :accountnumber, String
-      attribute :branch, String
-      attribute :alipayid, String
-      attribute :wechatid, String
-      attribute :nick, String
-      attribute :payment_url, String
-      attribute :payment_account, String
-      attribute :payment_password, String
+    attribute :paymethod, String
+    attribute :dest_currency, String
+    attribute :amount, Float
+    attribute :recipientseq, Integer
+    attribute :strategyseq, Integer
+    attribute :provinceseq, Integer
+    attribute :cityseq, Integer
+    attribute :accountname, String
+    attribute :accountnumber, String
+    attribute :branch, String
+    attribute :alipayid, String
+    attribute :wechatid, String
+    attribute :nick, String
+    attribute :payment_url, String
+    attribute :payment_account, String
+    attribute :payment_password, String
 
     def call
       HTTParty.post(uri, {
