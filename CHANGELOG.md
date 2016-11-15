@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Add ability to get error messages in responses
+- Add `bluepan_client_recipient` factory
 
 ## [0.2.0] - 2016-11-14
 ### Added

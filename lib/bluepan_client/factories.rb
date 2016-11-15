@@ -13,6 +13,14 @@ FactoryGirl.define do
     cityname_cn "Chinese Name"
   end
 
+  factory :bluepan_client_recipient, class: "BluepanClient::Recipient" do
+    sequence(:recipientseq) { |n| n }
+    firstname "Testy"
+    lastname "McTestface"
+    mobile "+839199299111"
+    email "testy@mctest.face"
+  end
+
   factory :bluepan_client_strategy, class: "BluepanClient::Strategy" do
     sequence(:strategyseq) { |n| n }
     currency { %w(KRW CNY).sample }
