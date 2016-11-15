@@ -1,8 +1,8 @@
 module BluepanClient
   class CreateRemittanceResponse < BaseResponse
 
-    attribute :remittance, Object, default: :default_remittance
-    attribute :recipient, Object, default: :default_recipient
+    attribute :remittance, Object, lazy: true, default: :default_remittance
+    attribute :recipient, Object, lazy: true, default: :default_recipient
 
     private
 
