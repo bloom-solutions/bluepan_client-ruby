@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.0] - 2017-06-13
+### Added
+- Add `client.get_exchange_rates`
+
 ## [0.3.0] - 2016-11-15
 ### Added
 - Add ability to get error messages in responses
