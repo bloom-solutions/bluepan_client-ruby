@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bluepan.net/v1/<api_token>/rates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private,no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '48'
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Expires:
+      - Mon, 12 Jun 2017 02:41:26 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      Set-Cookie:
+      - 5cd9bc3f10c9051b7eb9d43222241f5d=JUMzJTk1JUMyJUExJUMzJUI4JUMzJTk2JUMyJUEyJUMyJUI5JUMzJUJBJUMyJUEyJUMzJTk5JUM0JTgwJUMyJUExJUMzJUE1JUMzJUE4JUMyJUExJUMzJTkyJUMzJUJBJUMyJUEyJUMyJUE0JUMzJUI1JUMyJUExJUMzJUJGJUM0JTgyJUMyJUEyJUMzJUExJUMzJTk2JUMyJUEyJUMyJUIyJUMzJUJFJUMyJUExJUMzJTk1JUMyJUJBJUMyJUExJUMzJTk2JUMyJUFCJUMyJUExJUMzJTkwJUMzJTkwJUMyJUExJUMzJUEzJUMyJUI2JUMyJUExJUMzJTkzJUMzJUE2JUMyJUExJUMzJUFEJUMyJUI4JUMyJUExJUMzJTk0JUMzJTkxJUMyJUExJUMzJUE1JUMzJTgwJUMyJUExJUMzJTkxJUMzJUI0JUMyJUExJUMzJTlGJUMzJUFDJUMyJUExJUMzJTlEJUMzJThEJUMyJUExJUMzJTlDJUMzJTgxJUMyJUExJUMzJUEzJUMzJUE0JUMyJUExJUMzJUIyJUMzJUE0JUMyJUExJUMzJUFGJUMzJUEwJUMyJUExJUMzJThGJUMzJTkxJUMyJUExJUMzJUE4JUMzJTg1JUMyJUExJUMzJUFCJUMzJTg2JUMyJUExJUMzJTlFJUMzJTgzJUMyJUExJUMzJTlEJUMyJUJBJUMyJUExJUMzJTg5JUMzJTlCJUMyJUExJUMzJUFFJUMzJUFEJUMyJUExJUMzJUFFJUMzJUI4JUMyJUEyJUMyJUJCJUMzJTlBJUMyJUEyJUMyJUE4JUMzJTgzJUMyJUExJUMzJUE5JUMzJTlDJUMyJUExJUMzJUE1JUMzJUI1JUMyJUExJUMzJUE3JUMyJUI4JUMyJUExJUMzJUE0JUMyJUJDJUMyJUExJUMzJTk2JUMzJThGJUMyJUExJUMzJUE4JUMyJUFGJUMyJUExJUMzJTkwJUMzJUFCJUMyJUExJUMzJUEyJUM0JTgxJUMyJUExJUMzJUFEJUMyJUFFJUMyJUExJUMzJTkyJUMyJUI2JUMyJUExJUMzJTkwJUMzJTlGJUMyJUExJUMzJTk3JUMzJUE4JUMyJUExJUMzJTkwJUMzJTlBJUMyJUExJUMzJUE5JUMzJTkwJUMyJUExJUMzJUE5;
+        domain=api.bluepan.net; path=/
+      - ASPSESSIONIDCUCDQBQQ=IPMDALPCHKNPADADINAEMKBP; secure; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Tue, 13 Jun 2017 02:41:27 GMT
+    body:
+      encoding: UTF-8
+      string: "{\r\n\"BTCKRW\": \"3206060\",\r\n\"BTCCNY\": \"18893.07\"\r\n}"
+    http_version: 
+  recorded_at: Tue, 13 Jun 2017 02:39:49 GMT
+recorded_with: VCR 3.0.3
