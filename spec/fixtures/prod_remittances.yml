@@ -1,0 +1,6 @@
+---
+jose_rizal_remittance:
+  remittanceseq: 164696
+  amount: 2000
+  dest_currency: CNY
+  status: canceled

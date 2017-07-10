@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bluepan.net/v1/<api_token>/remittances/164696
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private,no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '602'
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Expires:
+      - Sun, 09 Jul 2017 06:34:42 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      Set-Cookie:
+      - 5cd9bc3f10c9051b7eb9d43222241f5d=JUMzJUFBJUMyJUExJUMzJUI5JUMyJUI5JUMyJUEyJUMyJUFFJUMzJUIyJUMyJUEyJUMyJUFBJUMzJUIzJUMyJUExJUMzJThDJUMzJTgxJUMyJUExJUMzJTk0JUMzJTlBJUMyJUExJUMzJUE4JUMzJUI5JUMyJUEyJUMyJUI3JUMyJUIxJUMyJUEyJUMyJUIxJUMzJUE5JUMyJUEyJUMyJUFFJUMzJTkxJUMyJUExJUMzJTlBJUMzJUI2JUMyJUExJUMzJUFFJUMzJUFCJUMyJUExJUMzJUEyJUMzJUIyJUMyJUExJUMzJTkxJUMyJUE0JUMyJUExJUMzJThFJUMyJUIyJUMyJUExJUMzJTg1JUMzJTkxJUMyJUExJUMzJUE3JUMzJThFJUMyJUExJUMzJTlDJUMyJUI2JUMyJUExJUMzJTkxJUMzJUJDJUMyJUExJUMzJTk1JUMzJUFFJUMyJUExJUMzJUE5JUMzJTgxJUMyJUExJUMzJTk1JUMzJUJDJUMyJUExJUMzJUExJUMzJTg3JUMyJUExJUMzJUExJUMzJTlGJUMyJUExJUMzJTk5JUM0JTg0JUMyJUEyJUMyJUExJUMzJTk5JUMyJUExJUMzJUE3JUMzJThEJUMyJUExJUMzJUFBJUMzJTg5JUMyJUExJUMzJTkxJUMzJTkwJUMyJUExJUMzJUE1JUMzJTgwJUMyJUExJUMzJTg1JUMyJUE3JUMyJUExJUMzJThEJUMyJUFDJUMyJUExJUMzJTkwJUMyJUJBJUMyJUExJUMzJUI5JUMzJTgxJUMyJUExJUMzJUI2JUMyJUFFJUMyJUExJUMzJUEzJUMyJUI3JUMyJUExJUMzJTg2JUMzJUFBJUMyJUExJUMzJTlFJUMzJTg2JUMyJUExJUMzJUFFJUMyJUFEJUMyJUExJUMzJTkwJUMzJUEwJUMyJUExJUMzJUEzJUMyJUE0JUMyJUExJUMzJThFJUMzJUI5JUMyJUExJUM0JTgxJUMzJUI4JUMyJUExJUMzJUFGJUMyJUIyJUMyJUExJUMzJTkyJUMzJTlCJUMyJUExJUMzJUFDJUMzJThGJUMyJUExJUMzJUExJUMzJUEwJUMyJUExJUMzJTlBJUMzJThGJUMyJUExJUMzJUEwJUMzJTkzJUMyJUExJUMzJTkz;
+        domain=api.bluepan.net; path=/
+      - ASPSESSIONIDAUBBRBQQ=FMCDOMEBJMEBGCODAOCNCEOC; secure; path=/
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 10 Jul 2017 06:34:43 GMT
+    body:
+      encoding: UTF-8
+      string: "{\r\n\"sender\": {\r\n\"sendername\": \"Testy McTestface\"\r\n},\r\n\"recipient\":
+        {\r\n\"recipientseq\": \"51730\",\r\n\"firstname\": \"Jose\",\r\n\"lastname\":
+        \"Rizal\",\r\n\"mobile\": \"099999993\",\r\n\"email\": \"recipient_3@example.com\",\r\n\"created_at\":
+        \"2017-07-05 15:15:27\",\r\n\"updated_at\": \"null\"\r\n},\r\n\"remittance\":
+        {\r\n\"remittanceseq\": \"164696\",\r\n\"test_condition\": \"4\",\r\n\"recipientseq\":
+        \"51730\",\r\n\"dest_currency\": \"CNY\",\r\n\"amount\": \"2000\",\r\n\"service_fee\":
+        \"0\",\r\n\"invoice_address\": \"\",\r\n\"status\": \"canceled\",\r\n\"created_at\":
+        \"2017-07-05 15:15:28\",\r\n\"completed_at\": \"2017-07-05 15:35:32\",\r\n\"strategyseq\":
+        \"39\",\r\n\"cancel_description\": \"\"\r\n}\r\n}"
+    http_version: 
+  recorded_at: Mon, 10 Jul 2017 06:32:47 GMT
+recorded_with: VCR 3.0.3
