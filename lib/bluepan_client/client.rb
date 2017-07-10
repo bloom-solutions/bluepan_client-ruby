@@ -53,5 +53,10 @@ module BluepanClient
       GetExchangeRatesResponse.new(raw_response: raw_response)
     end
 
+    def get_remittance(id)
+      request = GetRemittanceRequest.new(attributes.merge(remittanceseq: id))
+      raw_response = request.()
+      GetRemittanceResponse.new(raw_response: raw_response)
+    end
   end
 end

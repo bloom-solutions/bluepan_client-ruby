@@ -12,5 +12,7 @@ require "dry-validation-matchers"
 
 SPEC_DIR = Pathname.new(File.dirname(__FILE__))
 CONFIG = YAML.load_file(SPEC_DIR.join("config.yml"))
+REMITTANCE_FIXTURES = YAML.load_file(
+  SPEC_DIR.join("fixtures", "prod_remittances.yml"))
 
 Dir[SPEC_DIR.join("support", "**", "*.rb")].each {|f| require f}
