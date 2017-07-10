@@ -36,6 +36,7 @@ require "bluepan_client/responses/recipient_response"
 require "bluepan_client/responses/create_recipient_response"
 require "bluepan_client/responses/create_remittance_response"
 require "bluepan_client/responses/get_recipient_response"
+require "bluepan_client/responses/get_remittance_response"
 
 module BluepanClient
 
