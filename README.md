@@ -30,7 +30,7 @@ See `spec/acceptance` for examples.
 
 ### On Your App
 
-You may use FactoryGirl factories that were added for your convenience by calling `require "bluepan_client/factories"`
+You may use FactoryBot factories that were added for your convenience by calling `require "bluepan_client/factories"`
 
 ## Contributing
 

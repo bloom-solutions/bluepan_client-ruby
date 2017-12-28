@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
 
   factory :bluepan_client_province, class: "BluepanClient::Province" do
     sequence(:provinceseq) { |n| n }
